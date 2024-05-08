@@ -9,4 +9,13 @@ export default defineNuxtConfig({
   ],
 
   css: ["primeicons/primeicos.css"],
+
+  googleFonts: {
+    base64: true,
+    fontsDir: "assets/fonts",
+    overwriting: true,
+    families: {
+      Inter: [300, 500, 800],
+    },
+  }
 })

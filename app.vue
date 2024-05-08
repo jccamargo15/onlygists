@@ -1,5 +1,6 @@
 <template>
   <div>
-    <NuxtWelcome />
+    <!-- <NuxtWelcome /> -->
+    <h1 class="font-[Inter]">Onlygists</h1>
   </div>
 </template>

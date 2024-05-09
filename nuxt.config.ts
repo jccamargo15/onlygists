@@ -3,12 +3,12 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   modules: [
-    "@nuxt/tailwindcss",
-    "@nuxt/google-fonts", 
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/google-fonts", 
     "nuxt-primevue"
   ],
 
-  css: ["primeicons/primeicos.css"],
+  css: ['primeicons/primeicons.css'],
 
   googleFonts: {
     base64: true,

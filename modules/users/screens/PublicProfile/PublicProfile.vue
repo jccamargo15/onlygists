@@ -4,6 +4,7 @@ import WidgetGroup from '@/modules/reports/components/Widget/Group/Group.vue';
 import WidgetGroupLoader from '@/modules/reports/components/Widget/Group/Loader.vue';
 import WidgetCondensed from '@/modules/reports/components/Widget/Condensed/Condensed.vue';
 import GistsCardGroup from '@/modules/gists/components/Card/Group/Group.vue';
+import GistsCardItem from '@/modules/gists/components/Card/Item/Item.vue';
 </script>
 
 <template>
@@ -18,6 +19,13 @@ import GistsCardGroup from '@/modules/gists/components/Card/Group/Group.vue';
   </WidgetGroup>
 
   <WidgetDefault title="Todos os gists">
-    gists
+    <GistsCardGroup>
+      <GistsCardItem />
+      <GistsCardItem />
+      <GistsCardItem />
+      <GistsCardItem />
+      <GistsCardItem />
+      <GistsCardItem />
+    </GistsCardGroup>
   </WidgetDefault>
 </template>

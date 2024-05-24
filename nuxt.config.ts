@@ -7,7 +7,8 @@ export default defineNuxtConfig({
   modules: [
     "@nuxtjs/tailwindcss",
     "@nuxtjs/google-fonts", 
-    "nuxt-primevue"
+    "nuxt-primevue",
+    "@nuxtjs/supabase"
   ],
 
   css: ['primeicons/primeicons.css'],

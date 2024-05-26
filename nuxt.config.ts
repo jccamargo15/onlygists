@@ -14,7 +14,20 @@ export default defineNuxtConfig({
   css: ['primeicons/primeicons.css'],
 
   imports: {
-    dirs: ['./composables/useMarkdown'],
+    dirs: ['./composables/useMarkdown', './composables/useServices'],
+  },
+  
+  runtimeConfig: {
+    stripeProudctId5BRL: process.env.STRIPE_PRODUCT_ID_5BRL,
+    stripeWebhookSecret: process.env.STRIPE_WEBHOOK_SECRET,
+    resendKey: process.env.RESEND_KEY,
+
+    public: {
+      nodeEnv: process.env.NODE_ENV,
+      supabaseUrl: process.env.SUPABASE_URL,
+      supabaseKey: process.env.SUPABASE_KEY,
+      siteUrl: process.env.SITE_URL,
+    },
   },
 
   googleFonts: {

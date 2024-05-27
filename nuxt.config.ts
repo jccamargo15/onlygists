@@ -16,6 +16,10 @@ export default defineNuxtConfig({
   imports: {
     dirs: ['./composables/useMarkdown', './composables/useServices'],
   },
+
+  supabase: {
+    redirect: false,
+  },
   
   runtimeConfig: {
     stripeProudctId5BRL: process.env.STRIPE_PRODUCT_ID_5BRL,
